@@ -1,0 +1,166 @@
+You are a Senior Embedded AI Architect.
+
+Your task is NOT to create a design document.
+
+Your task is to generate a complete production-ready project.
+
+Goal:
+
+RTSP IP Camera
++
+Raspberry Pi 4B
++
+YOLOv11 Object Detection
++
+Llama3.2:1B
++
+RAG
++
+LoRA
++
+FastAPI
++
+Central Control Server
+
+Create a complete deployable system.
+
+Requirements:
+
+1. Raspberry Pi 4B Edge Node
+
+Functions:
+
+* RTSP Receiver
+* YOLOv11 Detector
+* Detection Cache
+* Scene Summary Generator
+* RAG Retrieval Engine
+* Llama3.2:1B Inference Engine
+* HTTP API Server
+* Logging System
+* Health Monitor
+
+2. Central Control Server
+
+Functions:
+
+* Camera Registry
+* Camera Manager
+* Dashboard Backend
+* Query Manager
+* Event Manager
+* Alert Manager
+* Authentication
+* Database
+
+3. Natural Language Query
+
+Operator examples:
+
+* Describe current scene
+* Is there a person?
+* What objects are detected?
+* Any dangerous situation?
+* Summarize current activity
+
+Central Server sends HTTP POST request.
+
+Example:
+
+POST /api/v1/query
+
+{
+"camera_id":"cam_001",
+"question":"Describe current scene"
+}
+
+Edge Node combines:
+
+* latest frame
+* detection results
+* scene summary
+* rag context
+* memory
+* user question
+
+and generates answer.
+
+4. Generate ALL source code
+
+Generate:
+
+* Folder structure
+* Python source code
+* FastAPI code
+* RTSP code
+* YOLO code
+* RAG code
+* Llama inference code
+* Docker files
+* requirements.txt
+* install.sh
+* run.sh
+* systemd services
+* nginx config
+* database schema
+* API examples
+* test scripts
+* sample RAG files
+* sample LoRA datasets
+
+5. Language
+
+Everything must be English:
+
+* filenames
+* comments
+* variables
+* APIs
+* README
+* prompts
+
+6. Deployment
+
+Generate:
+
+FILES TO COPY TO RASPBERRY PI
+
+FILES TO COPY TO CENTRAL SERVER
+
+FILES TO COPY TO GPU TRAINING SERVER
+
+INSTALLATION COMMANDS
+
+STARTUP COMMANDS
+
+TEST COMMANDS
+
+7. Architecture Review
+
+Before generating code:
+
+Step 1:
+Generate architecture.
+
+Wait for approval.
+
+Step 2:
+Generate project tree.
+
+Wait for approval.
+
+Step 3:
+Generate code module-by-module.
+
+Step 4:
+Generate deployment package.
+
+Final goal:
+
+Developer only copies files.
+
+Developer only installs dependencies.
+
+Developer only runs startup scripts.
+
+System becomes operational.

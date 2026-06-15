@@ -1,0 +1,131 @@
+프로젝트명:
+Edge Camera AI Control System
+
+부제:
+RTSP + YOLOv11 + Llama3.2:1B + RAG + LoRA 기반 분산 Edge Camera 관제 플랫폼
+
+목표:
+
+RTSP 기반 IP Camera와 Raspberry Pi 4B를 이용하여 Edge AI Camera Node를 구축한다.
+
+각 Camera Node는 다음 기능을 수행한다.
+
+* RTSP 영상 수신
+* YOLOv11 Object Detection
+* Detection Cache 생성
+* Scene Summary 생성
+* RAG 기반 지식 검색
+* Llama3.2:1B 기반 자연어 응답
+* HTTP REST API 제공
+* 중앙 관제 연동
+* Event 생성
+* Alert 생성
+* Health Monitoring
+
+시스템은 xN개의 Camera Node로 확장 가능해야 한다.
+
+중앙 관제 시스템은:
+
+* 영상 확인
+* 객체 확인
+* Scene Summary 확인
+* 자연어 질의
+* Event 확인
+* Alert 확인
+* Camera 상태 확인
+* Camera 설정 변경
+* Camera 원격 관리
+
+이 가능해야 한다.
+
+문서는 다음 항목을 포함한다.
+
+1. 프로젝트 개요
+2. 시스템 정의
+3. 시스템 목표
+4. 요구사항 정의
+5. 전체 시스템 아키텍처
+6. Edge Camera Node 아키텍처
+7. Control Center 아키텍처
+8. RTSP 처리 구조
+9. YOLOv11 구조
+10. Scene Summary 구조
+11. Llama3.2:1B 구조
+12. RAG 구조
+13. LoRA 구조
+14. Prompt Engineering 구조
+15. Memory 구조
+16. Camera Node API
+17. Central Control API
+18. Authentication 구조
+19. Camera Registration 구조
+20. Event 처리 구조
+21. Alert 처리 구조
+22. Detection 결과 저장 구조
+23. Scene Summary 저장 구조
+24. Database 설계
+25. Data Flow
+26. Video Streaming Flow
+27. Natural Language Query Flow
+28. Multi Camera Query Flow
+29. Queue 구조
+30. Monitoring 구조
+31. Logging 구조
+32. Security 구조
+33. Raspberry Pi 역할
+34. GPU Training Server 역할
+35. LoRA Training 구조
+36. RAG Index 구조
+37. Prompt Template
+38. JSON Output Format
+39. Deployment 구조
+40. 설치 절차
+41. 운영 절차
+42. 장애 대응 구조
+43. 성능 고려사항
+44. 개발 일정
+45. 테스트 방법
+46. 확장 구조
+47. 위험 요소 분석
+48. 향후 개선 방향
+49. 최종 결론
+
+추가 요구사항:
+
+중앙 관제 시스템은 HTTP GET 및 HTTP POST를 이용하여 각 Camera Node와 자연어 질의를 수행할 수 있어야 한다.
+
+예:
+
+* "Camera 1 describe current scene"
+* "Is there a person in Camera 3?"
+* "Any dangerous situation in warehouse?"
+* "What objects are detected?"
+* "Summarize current activity"
+
+Camera Node는 다음 정보를 조합하여 응답한다.
+
+* Latest Frame
+* YOLO Detection Result
+* Detection Count
+* Detection Confidence
+* Camera Location
+* Sensor Data
+* Retrieved RAG Context
+* Previous Scene Summary
+* User Question
+
+그리고 Llama3.2:1B는 JSON 형식으로 응답한다.
+
+문서는 실제 구현 가능한 수준으로 작성한다.
+
+API 예시를 포함한다.
+
+Database Schema를 포함한다.
+
+Deployment Diagram을 포함한다.
+
+Raspberry Pi에서 수행하는 기능과 GPU Server에서 수행하는 기능을 명확히 구분한다.
+
+문서는 한국어 기술 기획서 스타일로 작성한다.
+
+최종 출력은 PDF 문서 형태로 작성한다.
