@@ -76,7 +76,7 @@ pip install -r requirements.txt
 ## Run
 
 ```bash
-python3 main.py
+python3 rpi_client.py --server 192.168.1.3:18080 in here, you should modify the ip address for its ip
 ```
 
 ## License
